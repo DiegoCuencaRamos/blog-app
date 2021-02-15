@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render EditPostPage correctly 1`] = `
+<Fragment>
+  <PageTitle
+    description="Make some changes and update your posts"
+    title="Edit post"
+  />
+  <div
+    className="container"
+  >
+    <Link
+      className="link"
+      to="/read/1"
+    >
+      &gt; Read
+    </Link>
+    <form
+      className="form"
+    >
+      <div
+        className="form__item-wrapper--title"
+      >
+        <input
+          className="form__item--normal"
+          onChange={[Function]}
+          type="text"
+          value="First post"
+        />
+      </div>
+      <div
+        className="form__item-wrapper--normal"
+      >
+        <textarea
+          className="form__item--textarea"
+          onChange={[Function]}
+          value="This is my first fixure post"
+        />
+      </div>
+      <div
+        className="form__buttons-wrapper"
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+        >
+          Save Post
+        </button>
+        <button
+          className="button--remove"
+          onClick={[Function]}
+        >
+          Remove Post
+        </button>
+      </div>
+    </form>
+  </div>
+</Fragment>
+`;

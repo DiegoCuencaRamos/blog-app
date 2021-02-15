@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0;
+}
+
+h5, p, a {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+

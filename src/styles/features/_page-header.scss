@@ -1,0 +1,15 @@
+@use '../base/settings';
+
+.page-header {
+    padding: settings.$xl-size 0 settings.$m-size;
+    margin-bottom: settings.$m-size;
+}
+
+.page-header__title {
+    margin-bottom: settings.$xs-size;
+}
+
+.page-header__text {
+    font-size: settings.$text-small;
+    margin: 0
+}

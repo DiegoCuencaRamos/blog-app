@@ -1,0 +1,49 @@
+// Font sizes
+$text-normal: 1.6rem;
+$text-small: 1.4rem;
+
+// Spacings
+$xs-size: 1.2rem;
+$s-size: 1.6rem;
+$m-size: 2.3rem;
+$l-size: 3.5rem;
+$xl-size: 5rem;
+$tablet-breakpoint: 600px;
+
+// Layouts
+@mixin flex($wrap-direction: false, $align-items: false, $justify-content: false) {
+    @if $align-items {
+        align-items: $align-items;
+    }
+    
+    display: flex;
+
+    @if $wrap-direction {
+        flex-wrap: $wrap-direction;
+    }
+    
+    @if $justify-content {
+        justify-content: $justify-content;
+    }
+}
+
+// Colors
+$blue: #037FD3;
+$purple: #780088;
+$dark-gray: #939393;
+$gray: #a1a1a1;
+$light-gray: #d3d3d3;
+%gradient-background {
+    background-color: $blue;
+    background-image: -webkit-linear-gradient(to right, #44c6fc, #11a6ec, #0086d8, #0f65c1, #2d43a4);
+    background-image: -moz-linear-gradient(to right, #44c6fc, #11a6ec, #0086d8, #0f65c1, #2d43a4);
+    background-image: -ms-linear-gradient(to right, #44c6fc, #11a6ec, #0086d8, #0f65c1, #2d43a4);
+    background-image: -o-linear-gradient(to right, #44c6fc, #11a6ec, #0086d8, #0f65c1, #2d43a4);
+    background-image: linear-gradient(to right, #44c6fc, #11a6ec, #0086d8, #0f65c1, #2d43a4);
+}
+
+// Box shadow
+$box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+
+// Border radius
+$border-radius: 5px;

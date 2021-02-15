@@ -1,0 +1,55 @@
+@use '../base/settings';
+
+// Buttons
+%default-button {
+    color: #fff;
+    border-width: 0px;
+    border-radius: settings.$border-radius;
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: settings.$xl-size;
+    padding: 0 settings.$m-size;
+    transition: all 0.3s ease-in-out;
+}
+
+.button {
+    @extend %default-button;
+    background-color: #000;
+}
+
+.button:hover {
+    background-color: settings.$purple;
+}
+
+.button--link {
+    @extend %default-button;
+    background-color: initial;
+}
+
+.button--link:hover {
+    background-color: initial;
+    text-decoration: underline;
+}
+
+.button--remove {
+    @extend %default-button;
+    background-color: settings.$dark-gray;
+}
+
+.button--remove:hover {
+    background-color: settings.$blue;
+}
+
+// Links
+.link {
+    color: deeppink;
+    display: block;
+    margin-bottom: settings.$m-size;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+

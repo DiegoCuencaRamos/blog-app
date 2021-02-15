@@ -1,0 +1,9 @@
+@use '../base/settings';
+
+.read-page {
+    margin-top: settings.$xl-size;
+}
+
+.read-page__text {
+    font-size: settings.$text-small;
+}

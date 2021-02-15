@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render PostDashboardPage correctly 1`] = `
+<section>
+  <PageTitle
+    description="From here you will be able visualice all your posts"
+    title="Dashboard"
+  />
+  <Connect(PostListFilters) />
+  <Connect(PostList) />
+</section>
+`;

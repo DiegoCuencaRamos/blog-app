@@ -1,0 +1,63 @@
+@use '../base/settings';
+
+// Containers
+.list {
+    margin-bottom: settings.$m-size;
+}
+
+.list__table {
+    border-radius: settings.$border-radius;;
+    box-shadow: settings.$box-shadow;
+}
+
+.list__header {
+    @extend %gradient-background;
+    @include settings.flex($align-items: center, $justify-content: space-between);
+    border-top-left-radius: settings.$border-radius;
+    border-top-right-radius: settings.$border-radius;
+}
+
+.list__header,
+.list__body {
+    padding: 0 settings.$s-size;
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        padding: 0 settings.$m-size;
+    }
+}
+
+// Items
+%list__item {
+    @include settings.flex($align-items: center, $justify-content: space-between);
+    flex-direction: row;
+    padding: settings.$s-size settings.$xs-size;
+}
+
+.list__header-item,
+.list__body-item {
+    @extend %list__item;
+}
+
+.list__header-item {
+    color: #fff;
+}
+
+.list__body-item {
+    color: #000000;
+}
+
+.list__body-item:not(:last-child) {
+    border-bottom: 1px solid settings.$light-gray;
+}
+
+// Parragrafs
+.list__table p {
+    margin: 0;
+}
+
+.list__body-item:hover p {
+    text-decoration: underline;
+}
+
+
+
+    

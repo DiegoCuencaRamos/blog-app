@@ -1,0 +1,22 @@
+@use '../base/settings';
+
+.box-layout {
+    @extend %gradient-background;
+    @include settings.flex(wrap, center, center);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.box-layout__box {
+    background-color: #ffffff;
+    border-radius: settings.$border-radius;
+    box-shadow: settings.$box-shadow;
+    padding: settings.$l-size settings.$m-size;
+    text-align: center;
+    width: 26rem;
+}
+
+.box-layout__title {
+    margin: 0 0 settings.$s-size 0;
+}

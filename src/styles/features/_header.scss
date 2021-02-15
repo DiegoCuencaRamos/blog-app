@@ -1,0 +1,15 @@
+@use '../base/settings';
+
+.header {
+    @extend %gradient-background;
+    box-shadow: settings.$box-shadow;
+}
+
+.header__content {
+    @include settings.flex(wrap, center, space-between);
+    padding: settings.$s-size 0;
+}
+
+.header__content a {
+    color: #fff;
+}

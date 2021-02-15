@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render ReadPosPage correctly 1`] = `
+<div
+  className="read-page"
+>
+  <div
+    className="container"
+  >
+    <h1
+      className="read-page__title"
+    >
+      First post
+    </h1>
+    <p
+      className="read-page__text"
+    >
+      This is my first fixure post
+    </p>
+  </div>
+</div>
+`;

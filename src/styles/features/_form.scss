@@ -1,0 +1,55 @@
+@use '../base/settings';
+
+// Denormalize
+button, input, optgroup, select, textarea {
+    line-height: 2.7rem;
+}
+
+// Wrappers
+.form > * {
+    margin-bottom: settings.$s-size;
+}
+
+%form__item-wrapper {
+    border-radius: settings.$border-radius;
+    box-shadow: settings.$box-shadow;
+}
+
+.form__item-wrapper--title {
+    @extend %form__item-wrapper;
+    @extend %gradient-background;
+    padding-bottom: 3px;
+}
+
+.form__item-wrapper--normal {
+    @extend %form__item-wrapper;
+}
+
+// Elements
+%form__item {
+    border-top-left-radius: settings.$border-radius;
+    border-top-right-radius: settings.$border-radius;
+    border-width: 0;
+    outline: none;
+    padding: settings.$s-size settings.$m-size;
+    width: 100%;
+}
+
+.form__item--normal {
+    @extend %form__item;
+    height: settings.$xl-size;
+}
+
+.form__item--textarea {
+    @extend %form__item;
+    height: 27rem;
+}
+
+textarea {
+    font-size: settings.$text-small;
+}
+
+.form__buttons-wrapper .button {
+    margin-right: settings.$s-size;
+    margin-bottom: settings.$s-size;
+}

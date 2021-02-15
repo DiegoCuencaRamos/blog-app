@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CreatePostPage correctly 1`] = `
+<Fragment>
+  <PageTitle
+    description="Add new posts to to your site"
+    title="Add post"
+  />
+  <div
+    className="container"
+  >
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="form__item-wrapper--title"
+      >
+        <input
+          className="form__item--normal"
+          onChange={[Function]}
+          placeholder="Post Title"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="form__item-wrapper--normal"
+      >
+        <textarea
+          className="form__item--textarea"
+          onChange={[Function]}
+          placeholder="Post Body"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          className="button"
+        >
+          Save Post
+        </button>
+      </div>
+    </form>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,28 @@
+@use './settings';
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 10px */ 
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: settings.$text-normal;
+    line-height: 2.6rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.selected {
+    font-weight: 700;
+}

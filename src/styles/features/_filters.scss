@@ -1,0 +1,51 @@
+@use '../base/settings';
+
+// Containers
+.filters {
+    margin-bottom: settings.$m-size;
+}
+
+.filters__wrapper {
+    flex-direction: row;
+    border-radius: settings.$border-radius;
+    box-shadow: settings.$box-shadow;
+    padding: settings.$s-size 2.8rem;
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        @include settings.flex(wrap, stretch, space-between);
+        padding: settings.$s-size settings.$l-size;
+    }
+}
+
+.filters__content {
+    @include settings.flex(wrap, stretch, $justify-content: false);
+}
+
+// Items
+.filters__item {
+    border: 0px;
+    border-bottom: 1px solid settings.$light-gray;
+    display: inline-block;
+    height: settings.$xl-size;
+    line-height: settings.$xl-size;
+    margin-bottom: settings.$s-size;
+    width: 100%;
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        margin-bottom: 0;
+        width: auto;
+    }
+}
+
+.filters__item:first-child {
+    @media screen and (min-width: settings.$tablet-breakpoint) {
+        margin-right: settings.$s-size;
+    }
+}
+
+.filters__item::placeholder,
+select.filters__item {
+    color: settings.$gray;
+}
+
+.filters__item:focus {
+    outline: none;
+}
