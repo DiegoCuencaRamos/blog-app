@@ -1,7 +1,7 @@
 node_modules/
-public/dist/
+playground/
+public/
 .env.test
 .env.development
 .firebase.rules
-.gitignore
-readme.md
+readme.md 

@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
+import Loader from '../images/loader.gif'
 
 const LoadingPage = () => (
     <div className="loader">
         <img
             className="loader__image" 
-            src="scr/images/loader.gif"
+            src={Loader}
         />
     </div>
-);
+)
 
 export default LoadingPage;
