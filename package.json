@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
+    "start": "node server/server.js",
+    "devServer": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "test": "cross-env NODE_ENV=test jest"
+    "test": "cross-env NODE_ENV=test jest",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +42,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.1",
+    "express": "^4.17.1",
     "firebase": "^8.2.5",
     "history": "^4.10.1",
     "normalize.css": "^8.0.1",
