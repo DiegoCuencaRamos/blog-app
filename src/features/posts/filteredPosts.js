@@ -4,7 +4,7 @@ const filteredPosts = (posts, { text, sortBy }) => {
         return post.title.toLowerCase().includes(text.toLowerCase());
     }).sort((a, b) => {
         if(sortBy === 'title') {
-            return a.title > b.title ? 1 : -1;
+            return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
         }
     })
 };
